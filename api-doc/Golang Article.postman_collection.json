@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "aaf793b5-bf03-4b75-bc3c-6ad744cff38e",
+		"name": "Golang Article",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13803742"
+	},
+	"item": [
+		{
+			"name": "Article",
+			"item": [
+				{
+					"name": "Find Articles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0dWJhZ3VzIiwicm9sZSI6ImFkbWluIn0.B8n4sxgICtHcxZ8EEsfZ8AQp5gn9z_2nCF33RIkF8hk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "127.0.0.1:3200/api/v1/articles",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"v1",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FInd Article",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0dWJhZ3VzIiwicm9sZSI6ImFkbWluIn0.B8n4sxgICtHcxZ8EEsfZ8AQp5gn9z_2nCF33RIkF8hk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "127.0.0.1:3200/api/v1/articles/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"v1",
+								"articles",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Article",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0dWJhZ3VzIiwicm9sZSI6ImFkbWluIn0.B8n4sxgICtHcxZ8EEsfZ8AQp5gn9z_2nCF33RIkF8hk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"ini adalah contoh keenam\",\r\n    \"content\": \"ini adalah isi dari sebuah artikel yang kedua\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3200/api/v1/articles",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"v1",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Article",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0dWJhZ3VzIiwicm9sZSI6ImFkbWluIn0.B8n4sxgICtHcxZ8EEsfZ8AQp5gn9z_2nCF33RIkF8hk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"ini adalah artikel yang kelima\",\r\n    \"content\": \"ini adalah isi content dari artikel pertama\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3200/api/v1/articles/5",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"v1",
+								"articles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Article",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0dWJhZ3VzIiwicm9sZSI6ImFkbWluIn0.B8n4sxgICtHcxZ8EEsfZ8AQp5gn9z_2nCF33RIkF8hk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "127.0.0.1:3200/api/v1/articles/6",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"v1",
+								"articles",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"tubagus\",\r\n    \"password\": \"tubagus\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3200/api/v1/users",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"tubagus\",\r\n    \"password\": \"tubagus123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3200/api/v1/users/login",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
